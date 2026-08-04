@@ -1,0 +1,5 @@
+services:            # Lista de serviços (containers) que o Compose vai gerenciar
+  api:               # Nome do serviço/container da API
+    build: .         # Constrói a imagem a partir do Dockerfile na pasta atual
+    ports:           # Lista de portas mapeadas
+      - "3000:3000"  # Mapeia a porta 3000 da máquina para a porta 3000 do container
